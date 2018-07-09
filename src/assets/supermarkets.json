@@ -1,0 +1,88 @@
+{
+    "supermarkets": [
+        {
+            "shopName": "shufersal",
+            "street": "53 ארלוזורוב",
+            "latitude": 32.086128,
+            "longitude": 34.778764
+        },
+        {
+            "shopName": "shufersal",
+            "street": "יגאל אלון 76",
+            "latitude": 32.0652457,
+            "longitude": 34.79263270000001
+        },
+        {
+            "shopName": "shufersal",
+            "street": "ברזיל 15",
+            "latitude": 32.111471,
+            "longitude": 34.796218
+        },
+        {
+            "shopName": "shufersal",
+            "street": "צהל 71",
+            "latitude": 32.121703,
+            "longitude": 34.834784
+        },
+        {
+            "shopName": "mega",
+            "street": "הברזל 23",
+            "latitude": 32.109179,
+            "longitude": 34.839774
+        },
+        {
+            "shopName": "mega",
+            "street": "שלום אש 9",
+            "latitude": 32.107020,
+            "longitude": 34.820844
+        },
+        {
+            "shopName": "mega",
+            "street": "בני אפרים 209",
+            "latitude": 32.111090,
+            "longitude": 34.815924
+        },
+        {
+            "shopName": "mega",
+            "street": "יהודה המכבי 46",
+            "latitude": 32.093831,
+            "longitude": 34.791861
+        },
+        {
+            "shopName": "tivTaam",
+            "street": "פנחס רוזן 72",
+            "latitude": 32.114692,
+            "longitude": 34.826066
+        },
+        {
+            "shopName": "tivTaam",
+            "street": "דבורה הנביאה 112",
+            "latitude": 32.117238,
+            "longitude": 34.837851
+        },
+        {
+            "shopName": "tivTaam",
+            "street": "דיזינגוף 16",
+            "latitude": 32.074204,
+            "longitude": 34.779291
+        },
+        {
+            "shopName": "am:pm",
+            "street": "דיזינגוף 193",
+            "latitude": 32.086655,
+            "longitude": 34.774740
+        },
+        {
+            "shopName": "am:pm",
+            "street": "אבן גבירול 14",
+            "latitude": 32.072782,
+            "longitude": 34.781967
+        },
+        {
+            "shopName": "am:pm",
+            "street": "אבן גבירול 136",
+            "latitude": 32.088307,
+            "longitude": 34.782553
+        }
+    ]
+}
