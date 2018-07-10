@@ -38,6 +38,7 @@ export class AppComponent {
       this.supermarkets = data.supermarkets;
       this.getDist();
       console.log(this.supermarkets);
+      this.bestCompany();
     });
 
   }
@@ -63,5 +64,59 @@ export class AppComponent {
       this.supermarkets[i].distance = dist;
     }
   }
-}
 
+  bestCompany() {
+
+    const dataCount = { shufersal: 0, mega: 0, tivTaam: 0, ampm: 0 };
+
+    for (let i = 0; i < this.supermarkets.length; i++) {
+      if (this.supermarkets[i].distance < 50) {
+        if (this.supermarkets[i].shopName === 'shufersal') {
+          dataCount.shufersal += 1;
+        } else if (this.supermarkets[i].shopName === 'mega') {
+          dataCount.mega += 1;
+        } else if (this.supermarkets[i].shopName === 'tivTaam') {
+          dataCount.tivTaam += 1;
+        } else if (this.supermarkets[i].shopName === 'am:pm') {
+          dataCount.ampm += 1;
+        }
+      }
+    }
+
+    const arrCount: any = Object.values(dataCount);
+    // console.log(arrCount);
+    const max = Math.max(...arrCount);
+    // console.log(` max value: ${max}`);
+    const bestCompanies: any = (this.getKeyByValue(dataCount, max));
+
+    // if (bestCompanies.length > 1) {
+    //   for (let j = 0; j < bestCompanies.length; j++) {
+    //     for (let i = 0; i < this.supermarkets.length; i++) {
+    //       if (this.supermarkets[i].shopName === bestCompanies[j]) {
+    //         this.supermarkets[i].distance
+    //       }
+
+    //     }
+    //   }
+    }
+
+      getKeyByValue(dataCount, max) {
+        const companies = [];
+        const company = Object.keys(dataCount).find(key => dataCount[key] === max);
+        companies.push(company);
+        delete dataCount[company];
+        if (Object.keys(dataCount).find(key => dataCount[key] === max)) {
+          const company2 = Object.keys(dataCount).find(key => dataCount[key] === max);
+          companies.push(company2);
+          delete dataCount[company2];
+        } if (Object.keys(dataCount).find(key => dataCount[key] === max)) {
+          const company3 = Object.keys(dataCount).find(key => dataCount[key] === max);
+          companies.push(company3);
+          return companies;
+        } else {
+          return companies;
+        }
+      }
+
+
+    }
